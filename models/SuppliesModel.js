@@ -9,7 +9,7 @@ const suppliesSchema = new schema({
 },
 {
     versionKey: false,
-    collection: 'supplies'
+    collection: 'Supplies'
 });
 
-module.export = mongoose.model('supplies', suppliesSchema);
+module.exports = mongoose.model('supplies', suppliesSchema);
