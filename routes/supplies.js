@@ -1,5 +1,5 @@
-const supplies = require('../models/SuppliesModel');
 const suppliesController = require('../controllers/SuppliesController');
+const router = require('express').Router();
 
 //Get all supplies
 router.get('/', (suppliesController.getAllSupplies));
