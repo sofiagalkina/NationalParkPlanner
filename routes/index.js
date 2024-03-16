@@ -2,6 +2,13 @@
 const express = require('express');
 const router = express.Router();
 
+// creating instances of swagger (sofia)
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('../swagger-output.json');
+
+
+
+
 //default response
 router.get('/', (req, res) => {
     res.json({
@@ -12,6 +19,12 @@ router.get('/', (req, res) => {
 
 //Supplies Route
 router.use('/supplies', require('./supplies'));
+
+
+// Swagger route (sofia)
+router.use('/api-docs', swaggerUi.serve);
+router.get('/api-docs', swaggerUi.setup(swaggerDocument));
+
 
 
 //error handling
