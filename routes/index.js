@@ -25,6 +25,9 @@ router.use('/supplies', require('./supplies'));
 router.use('/api-docs', swaggerUi.serve);
 router.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
+//Accounts route
+router.use('/accounts', require('./accounts'));
+
 
 
 //error handling
