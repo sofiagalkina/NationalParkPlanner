@@ -28,7 +28,8 @@ router.get('/api-docs', swaggerUi.setup(swaggerDocument));
 //Accounts route
 router.use('/accounts', require('./accounts'));
 
-
+//Destinations route
+router.use('/destinations', require('./destinations'));
 
 //error handling
 router.use((err, req, res, next) => {
