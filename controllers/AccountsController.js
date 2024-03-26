@@ -1,4 +1,4 @@
-const supplies = require('../models/AccountsModel');
+const accounts = require('../models/AccountsModel');
 
 //Get all accounts
 const getAllAccounts = async (req, res) => {
@@ -6,7 +6,7 @@ const getAllAccounts = async (req, res) => {
         console.log("Getting all user account information");
         const accountsList = await accounts.find();
         console.log(accountsList);
-        res.json(accountsListList);
+        res.json(accountsList);
     }
     catch (err) {
         console.log(err);
