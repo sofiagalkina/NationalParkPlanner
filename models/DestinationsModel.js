@@ -18,7 +18,7 @@ const destinationsSchema = new schema({
 },
 {
     versionKey: false,
-    collection: 'Destinations'
+    collection: 'Destination'
 });
 
-module.exports = mongoose.model('Destinations', destinationsSchema);
+module.exports = mongoose.model('Destination', destinationsSchema);
